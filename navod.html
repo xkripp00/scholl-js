@@ -1,0 +1,35 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title>Projekt WAP - DOM inspektor - Návod</title>
+</head>
+<body>
+    <h1>Projekt WAP - návod</h1>
+    <p>
+        Do hlavičky html dokumentu sa vlozi: <strong><i>&lt;script id="dom_inspektor_script" src="./wap_dom_inspektor.js"&gt;&lt;/script&gt;</i></strong><br />
+        Na pravej strane obrazovky sa vytvorí DOM strom.
+    </p>
+    Funkcionalita:
+    <ul>
+        <li>
+            Pohybom kurzora nad tagmi v DOM strome sa zvýrazňujú dané elementy na stránke pomocou modrého ohraničenia. Zároveň sa zvýrazňujú aj 
+            prvky v DOM strome (bledomodré podfarbenie).
+        </li>
+        <li>
+            Kliknutím na element stránky alebo kliknutím na tag v DOM strome sa vyberie daný tag a je možné upraviť jeho atribúty <strong><i>ID</i></strong> 
+            a <strong><i>CLASS</i></strong> pomocou textových polí nad DOM stromom. Zmena atribútov nastane po kliknutí na tlačidlo <strong><i>ZMEN</i></strong>. Kliknutím na element alebo 
+            tag sa zároveň daný tag zvýrazní v DOM strome.
+        </li>
+        <li>
+            Pre kontrolu zmeny atribútov je vytvorená funkcia, ktorá pri dvojkliku na element stránky(nie na tag v DOM strome) zobrazi alert so správou v tvare:
+            <strong><i>"TAG---ID---CLASS"</i></strong>
+        </li>
+        <li>
+            Zvhľad DOM stromu sa dá upraviť zmenou CSS atribútov v scripte <strong><i>wap_dom_inspektor.js</i></strong> na riadkoch 38-48. Je to tam vyznačené komentármi.
+        </li>
+    </ul>
+
+</body>
+</html>
